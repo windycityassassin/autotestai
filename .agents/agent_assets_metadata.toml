@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "2R7OAwp7dl4dFkEJwPoPq"
+uri = "file://attached_assets/AutoTestAI_Market_Research_2026.md"
+type = "text"
+title = "AutoTestAI — Full Strategy, Architecture & Vision Document"
