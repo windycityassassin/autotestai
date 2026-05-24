@@ -6,7 +6,8 @@
 
 Self-healing tests · Autonomous monitoring · Project memory · Stripe-native billing
 
-Run the demo locally: see [Run the demo locally](#run-the-demo-locally) below.
+[Live UI demo](https://windycityassassin.github.io/autotestai/) (tour mode, backend stubbed)
+· [Run the demo locally](#run-the-demo-locally) (full stack)
 
 </div>
 
