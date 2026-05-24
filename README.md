@@ -6,7 +6,7 @@
 
 Self-healing tests · Autonomous monitoring · Project memory · Stripe-native billing
 
-[Live demo](https://autotestai.replit.app/demo) · [Pricing](https://autotestai.replit.app/#pricing) · [Waitlist](https://autotestai.replit.app/)
+Run the demo locally: see [Run the demo locally](#run-the-demo-locally) below.
 
 </div>
 
@@ -106,16 +106,22 @@ Optional:
 | `GOOGLE_GENERATIVE_AI_API_KEY` | enables Gemini as assertion secondary/arbiter |
 | `REDIS_URL` | enables passmark step caching (highly recommended for prod) |
 
-## Try the demo
+## Run the demo locally
 
-Visit `/demo` on a running instance. The endpoint provisions a `demo@autotestai.com` user, seeds a Twenty CRM project with 3 example tests, 7 historical runs (one self-heal recovery), 10 project-memory entries, and 5 KAIROS monitoring cycles — then logs you straight in.
+```bash
+npm install
+npm run db:push   # sync schema to your Postgres
+npm run dev       # boots Express + Vite
+```
+
+Then open `http://localhost:5000/demo`. The endpoint provisions a `demo@autotestai.com` user, seeds a Twenty CRM project with 3 example tests, 7 historical runs (one self-heal recovery), 10 project-memory entries, and 5 KAIROS monitoring cycles, then logs you straight in.
 
 Deep links:
-- `/demo` — the demo project overview
-- `/demo?section=saved-tests` — the generated tests
-- `/demo?section=memory` — learned selectors and anti-patterns
-- `/demo?section=monitoring` — KAIROS history + dream summaries
-- `/demo?section=activity` — full activity feed
+- `/demo`, the demo project overview
+- `/demo?section=saved-tests`, the generated tests
+- `/demo?section=memory`, learned selectors and anti-patterns
+- `/demo?section=monitoring`, KAIROS history + dream summaries
+- `/demo?section=activity`, full activity feed
 
 ## Pricing
 
